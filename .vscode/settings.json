@@ -3,5 +3,6 @@
     "*.embeddedhtml": "html",
     "*.cpp": "cpp",
     "iostream": "cpp"
-  }
+  },
+  "C_Cpp.default.compilerPath": "/usr/bin/g++"
 }
