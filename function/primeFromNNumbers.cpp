@@ -30,6 +30,6 @@ void isPrime(int n)
 
 int main()
 {
-    int n = 5;
+    int n = 10;
     isPrime(n);
 }
