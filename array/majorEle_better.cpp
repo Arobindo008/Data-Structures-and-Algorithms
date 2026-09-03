@@ -24,7 +24,7 @@ int majorityEle(vector<int> ar)
 
 int main()
 {
-    vector<int> ar = {2,1, 2, 1, 2, 1, 1};
+    vector<int> ar = {2, 1, 2, 1, 2, 1, 1};
     cout << majorityEle(ar) << endl;
     return 0;
 }
