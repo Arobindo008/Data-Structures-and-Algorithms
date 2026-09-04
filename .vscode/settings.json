@@ -4,5 +4,6 @@
     "*.cpp": "cpp",
     "iostream": "cpp"
   },
-  "C_Cpp.default.compilerPath": "/usr/bin/g++"
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",
+  "search.useIgnoreFiles": false
 }
