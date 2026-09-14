@@ -25,7 +25,7 @@ int rbs(vector<int> arr, int tar, int st, int end)
 int main()
 {
     vector<int> arr = {-1, 0, 3, 5, 6, 7, 12};
-    int target = 1, st = 0, end = arr.size() - 1;
+    int target = -1, st = 0, end = arr.size() - 1;
     cout << rbs(arr, target, st, end) << endl;
     return 0;
 }
