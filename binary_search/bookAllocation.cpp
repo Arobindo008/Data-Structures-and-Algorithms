@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-bool isValid(vector<int> ar, int n, int m, int maxAllowedPages)
+bool isValid(vector<int> &ar, int n, int m, int maxAllowedPages)
 {
 
     int students = 1, pages = 0;
@@ -34,7 +34,7 @@ int bookAllocation(vector<int> ar, int m)
         sum += ar[i];
     }
     int end = sum;
-    while (st < end)
+    while (st <= end)
     {
         int mid = st + (end - st) / 2;
         if (isValid(ar, n, m, mid))
@@ -52,8 +52,8 @@ int bookAllocation(vector<int> ar, int m)
 
 int main()
 {
-    vector<int> ar = {2, 1, 3, 4};
-    int m = 2;
+    vector<int> ar = {22, 23, 67};
+    int m = 1;
     cout << bookAllocation(ar, m) << endl;
 
     return 0;
