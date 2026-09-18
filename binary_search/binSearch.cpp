@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int binSearch(vector<int> &arr,int target)
+int binSearch(vector<int> &arr, int target)
 {
     int st = 0, end = arr.size() - 1;
     while (st <= end)
@@ -22,6 +22,7 @@ int binSearch(vector<int> &arr,int target)
 
         else
             return mid;
+        
     }
 
     return -1;
