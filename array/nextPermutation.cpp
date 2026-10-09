@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 void nextPermutation(vector<int> &ar)
@@ -16,11 +17,12 @@ void nextPermutation(vector<int> &ar)
     }
     if (piv == -1)
     {
-        int i = 0, j = n - 1;
-        while (i <= j)
-        {
-            swap(ar[i++], ar[j--]);
-        }
+        // int i = 0, j = n - 1;
+        // while (i <= j)
+        // {
+        //     swap(ar[i++], ar[j--]);
+        // }
+        reverse(ar.begin(), ar.end());
         return;
     }
     for (int i = n - 1; i > piv; i--)
@@ -40,7 +42,7 @@ void nextPermutation(vector<int> &ar)
 
 int main()
 {
-    vector<int> ar = {3, 2, 1};
+    vector<int> ar = {1,2,3};
     nextPermutation(ar);
     for (auto x : ar)
     {
