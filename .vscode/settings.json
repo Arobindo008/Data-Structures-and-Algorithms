@@ -5,5 +5,6 @@
     "iostream": "cpp"
   },
   "C_Cpp.default.compilerPath": "/usr/bin/g++",
-  "search.useIgnoreFiles": false
+  "search.useIgnoreFiles": false,
+  "C_Cpp.errorSquiggles": "disabled"
 }
