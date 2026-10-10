@@ -12,8 +12,8 @@ int main()
     // }
 
     //reverse
-     vector<int>:: reverse_iterator it;
-    for(it=vec.rbegin();it!=vec.rend();it++){
+     //vector<int>:: reverse_iterator it; //use iterator/reverse_iterator or simply use auto.
+    for(auto it=vec.rbegin();it!=vec.rend();it++){
         cout<<*(it)<<" ";
     }
     cout<<endl;
