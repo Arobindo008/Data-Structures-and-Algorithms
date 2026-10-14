@@ -12,7 +12,7 @@ int main()
 
     cout << "lower bound = " << *(s.lower_bound(1)) << endl;
     cout << "upper bound = " << *(s.lower_bound(11)) << endl;
-     cout << "upper bound = " << *(s.lower_bound(13)) << endl;
+    cout << "upper bound = " << *(s.lower_bound(13)) << endl;
     for (auto x : s)
     {
         cout << x << " ";
