@@ -4,7 +4,7 @@ using namespace std;
 
 bool isAlphaNum(char ch)
 {
-    if ((ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'z'))
+    if ((ch >= '0' && ch <= '9') || (tolower(ch) >= 'a' && tolower(ch) <= 'z'))
     {
         return true;
     }
@@ -38,7 +38,7 @@ bool isPalindrome(string str)
 
 int main()
 {
-    string str = "r@ace a e&ar";
+    string str = "r@ace a eC&ar";
     if (isPalindrome(str))
     {
         cout << "It is palindrome." << endl;
